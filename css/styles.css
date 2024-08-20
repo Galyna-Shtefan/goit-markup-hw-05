@@ -732,6 +732,7 @@ input {
 .modal-btn-close:focus {
     fill: #ffffff;
     background-color: #404BBF;
+    border: none;
 }
 
 .modal-subtitle {
@@ -748,7 +749,6 @@ input {
 
 .form-wrapper-cont {
     margin-bottom: 8px;
-
 
 }
 
