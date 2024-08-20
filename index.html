@@ -487,7 +487,8 @@
                 class="footer-input"
                 type="email"
                 id="subscribe-email"
-                placeholder="email"
+                name="user-email"
+                placeholder="E-mail"
               />
             </label>
             <button class="footer-button" type="submit">
@@ -500,11 +501,10 @@
         </div>
       </div>
     </footer>
-    <main></main>
-    <footer></footer>
+
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-btn-close" type="submit">
+        <button class="modal-btn-close" type="button">
           <svg class="modal-btn-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -517,8 +517,14 @@
           <div class="form-wrapper-cont">
             <label class="form-label" for="user-name">Name</label>
             <div class="modal-cont-input">
-              <input class="form-input" type="text" id="user-name" required />
-              <svg class="modal-icon" width="18" height="18">
+              <input
+                class="form-input"
+                type="text"
+                name="username"
+                id="user-name"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -526,7 +532,13 @@
           <div class="form-wrapper-cont">
             <label class="form-label" for="user-tel">Phone</label>
             <div class="modal-cont-input">
-              <input class="form-input" type="tel" id="user-tel" required />
+              <input
+                class="form-input"
+                type="tel"
+                name="phone"
+                id="user-tel"
+                required
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -535,7 +547,13 @@
           <div class="form-wrapper-cont">
             <label class="form-label" for="user-email">Email</label>
             <div class="modal-cont-input">
-              <input class="form-input" type="email" id="user-email" required />
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="user-email"
+                required
+              />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -545,6 +563,7 @@
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-textarea"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>

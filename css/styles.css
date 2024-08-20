@@ -630,6 +630,10 @@ input {
     margin-bottom: 16px;
 }
 
+.icon-send {
+    margin-left: 16px;
+}
+
 .footer-button {
     display: flex;
     justify-content: center;
@@ -667,8 +671,8 @@ input {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop.is-open {
@@ -707,18 +711,26 @@ input {
     line-height: 0;
     cursor: pointer;
     border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-close:hover>svg,
 .modal-btn-close:focus>svg {
 
     background-color: #404BBF;
-    fill: #F4F4FD;
+    fill: #ffffff;
+
 }
 
 .modal-btn-close:hover,
 .modal-btn-close:focus {
-
+    fill: #ffffff;
     background-color: #404BBF;
 }
 
@@ -758,9 +770,9 @@ input {
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     padding-left: 38px;
-    outline: none;
+    outline: transparent;
     background-color: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -801,6 +813,11 @@ input {
 }
 
 .modal-textarea {
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     width: 360px;
     height: 120px;
     border-radius: 4px;
@@ -808,8 +825,8 @@ input {
     border: 1px solid rgba(46, 47, 66, 0.40);
     background-color: transparent;
     resize: none;
-    outline: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea::placeholder {
@@ -893,6 +910,6 @@ input {
 .checkbox:checked+.custom-label-user-checkbox>.custom-checkbox {
     border-color: transparent;
     background-color: #404BBF;
-    fill: #404BBF;
+    fill: #F4F4FD;
     border: none;
 }
