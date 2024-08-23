@@ -576,6 +576,7 @@ input {
 
 }
 
+
 .link-icon-footer:hover,
 .link-icon-footer:focus {
     background-color: #31D0AA;
@@ -632,6 +633,7 @@ input {
 
 .icon-send {
     margin-left: 16px;
+    fill: #FFF;
 }
 
 .footer-button {
@@ -649,9 +651,6 @@ input {
     background-color: #4D5AE5;
     border: none;
     cursor: pointer;
-    gap: 16px;
-    margin-left: 24px;
-
 
 }
 
